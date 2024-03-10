@@ -1,0 +1,57 @@
+{
+  "name": "dgnbs-cli",
+  "version": "1.0.0",
+  "description": "Doganbas React CLI Tool",
+  "main": "src/componentGenerator/index.ts",
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "start:dev": "npx nodemon --watch src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doganbas/dgnbs-cli.git"
+  },
+  "keywords": [
+    "CLI",
+    "React",
+    "NextJS"
+  ],
+  "dependencies": {
+    "axios": "^1.6.7",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "cosmiconfig": "^9.0.0",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.2.0",
+    "glob": "^8.1.0",
+    "handlebars": "^4.7.8",
+    "log-update": "^6.0.0",
+    "mkdirp": "^3.0.1",
+    "node-alias": "^1.0.4",
+    "semver": "^7.5.4"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/glob": "^8.1.0",
+    "@types/node": "^20.11.7",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "app-root-dir": "^1.0.2",
+    "eslint": "^8.56.0",
+    "eslint-plugin-ft-flow": "^3.0.2",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.4",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "bin": {
+    "cli": "bin/cli.js"
+  },
+  "author": "Serkan DOĞANBAŞ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doganbas/dgnbs-cli/issues"
+  },
+  "homepage": "https://github.com/doganbas/dgnbs-cli#readme"
+}

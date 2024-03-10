@@ -1,0 +1,7 @@
+import {keyOfList} from "helpers/generalHelper";
+
+export const {{smallName}}Localization = {
+  componentName: '{{name}}',
+};
+
+export const {{smallName}}LocalizationKeys = keyOfList<typeof {{smallName}}Localization>({{smallName}}Localization, '{{customLocalizationPath}}-');

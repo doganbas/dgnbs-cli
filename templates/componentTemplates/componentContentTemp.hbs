@@ -1,0 +1,20 @@
+import React, {FunctionComponent} from 'react';
+import {useTranslations} from 'next-intl';
+
+import { {{smallName}}DefaultProps } from './{{smallName}}.default';
+import { {{smallName}}LocalizationKeys } from './{{smallName}}.localization';
+import {{smallName}}Style from './{{smallName}}.module.scss';
+import {gcn, generateDefaultProps} from 'helpers/generalHelper';
+import { {{name}}PropsType } from './{{smallName}}.type';
+
+
+export const {{name}}: FunctionComponent<{{name}}PropsType> = inProps => {
+    const props = generateDefaultProps<{{name}}PropsType>(inProps, {{smallName}}DefaultProps);
+    const t = useTranslations();
+
+    return (
+    <div className={ gcn({{smallName}}Style.container, props.className) }>
+        <span>{t({{smallName}}LocalizationKeys.componentName)}</span>
+    </div>
+    );
+};

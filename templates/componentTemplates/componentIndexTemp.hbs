@@ -1,0 +1,10 @@
+import { {{name}} } from './{{smallName}}.component';
+import { {{smallName}}DefaultProps } from './{{smallName}}.default';
+import { {{smallName}}Localization, {{smallName}}LocalizationKeys } from './{{smallName}}.localization';
+import {{smallName}}Style from './{{smallName}}.module.scss';
+import { {{name}}PropsType } from './{{smallName}}.type';
+
+{{name}}.defaultProps = {{smallName}}DefaultProps;
+
+export default {{name}};
+export {type {{name}}PropsType, {{smallName}}DefaultProps, {{smallName}}Style, {{smallName}}Localization, {{smallName}}LocalizationKeys};
